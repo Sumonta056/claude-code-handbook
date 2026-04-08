@@ -10,6 +10,36 @@ icon: bolt
 If you want to go with Default Roadmap for Claude Code. [Try it Out](https://roadmap.sh/claude-code)
 {% endhint %}
 
+### Writing content
+
+GitBook offers a range of block types for you to add to your content inline — from simple text and tables, to code blocks and more. These elements will make your pages more useful to readers, and offer extra information and context.
+
+Either start typing below, or press `/` to see a list of the blocks you can insert into your page.
+
+### Add a new block
+
+{% stepper %}
+{% step %}
+#### New to Claude Code ⭐ ⭐⭐
+
+Go throught this [Claud Code Learning Roadmap](https://github.com/luongnv89/claude-howto/blob/main/LEARNING-ROADMAP.md#milestone-1a-first-commands--memory) ( Must go through this )
+{% endstep %}
+
+{% step %}
+#### Search for the block you need
+
+Try searching for “Stepper”, for exampe, to insert the stepper block.
+{% endstep %}
+
+{% step %}
+#### Ultimate Claude Code Sheet ! ⭐
+
+{% embed url="https://cc.storyfox.cz/" %}
+
+Click or press Enter to insert your block. From here, you’ll be able to edit it as needed.
+{% endstep %}
+{% endstepper %}
+
 
 
 ### Import

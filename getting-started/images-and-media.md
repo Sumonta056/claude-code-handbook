@@ -4,6 +4,8 @@ icon: image-landscape
 
 # Guidelines!
 
+{% embed url="https://cc.storyfox.cz/" %}
+
 
 
 1. Always use **plan mode**, give Claude a way to verify
