@@ -14,7 +14,7 @@
 * [MCP Servers!](basics/markdown.md)
 * [Claude Setting.json](basics/claude-setting-json.md)
 * [Commands ?](basics/commands.md)
-* [Useful Plugins!](basics/useful-plugins.md)
+* [Useful Plugins + Skills!](basics/useful-plugins-+-skills.md)
 * [Best Resources ):](basics/best-resources.md)
 
 ## Resources
