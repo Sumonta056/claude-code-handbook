@@ -4,7 +4,7 @@ icon: lobster
 
 # Best Resources ):
 
-#### Claude Code Toolkit  ⭐ ⭐⭐
+#### Claude Code Toolkit  ⭐⭐⭐
 
 The most comprehensive toolkit for Claude Code -- 135 agents, 35 curated skills (+400,000 via), 42 commands, 176+ plugins, 20 hooks, 15 rules, 7 templates, 13 MCP configs, 26 companion apps, 51 ecosystem entries, and more.
 
@@ -13,6 +13,33 @@ The most comprehensive toolkit for Claude Code -- 135 agents, 35 curated skills 
 [https://github.com/rohitg00/awesome-claude-code-toolkit](https://github.com/rohitg00/awesome-claude-code-toolkit)
 
 ***
+
+#### RTK-AI ⭐⭐
+
+High-performance CLI proxy that reduces LLM token consumption by 60-90%
+
+{% code overflow="wrap" expandable="true" %}
+```
+  Without rtk:                                    With rtk:
+
+  Claude  --git status-->  shell  -->  git         Claude  --git status-->  RTK  -->  git
+    ^                                   |            ^                      |          |
+    |        ~2,000 tokens (raw)        |            |   ~200 tokens        | filter   |
+    +-----------------------------------+            +------- (filtered) ---+----------+
+```
+{% endcode %}
+
+[https://github.com/rtk-ai/rtk](https://github.com/rtk-ai/rtk)
+
+***
+
+#### Best Cla
+
+
+
+[https://app.aitmpl.com/skills](https://app.aitmpl.com/skills)
+
+####
 
 #### Awesome Claude Code
 

@@ -22,21 +22,27 @@ Either start typing below, or press `/` to see a list of the blocks you can inse
 {% step %}
 #### New to Claude Code ⭐ ⭐⭐
 
-Go throught this [Claud Code Learning Roadmap](https://github.com/luongnv89/claude-howto/blob/main/LEARNING-ROADMAP.md#milestone-1a-first-commands--memory) ( Must go through this )
+Go through this [Claud Code Learning Roadmap](https://github.com/luongnv89/claude-howto/blob/main/LEARNING-ROADMAP.md#milestone-1a-first-commands--memory) (Must go through this)
 {% endstep %}
 
 {% step %}
-#### Search for the block you need
+#### Ultimate Claude Code Sheet! ⭐⭐
 
-Try searching for “Stepper”, for exampe, to insert the stepper block.
-{% endstep %}
-
-{% step %}
-#### Ultimate Claude Code Sheet ! ⭐
+Must go through this for Claude tricks and keyboard shortcuts!
 
 {% embed url="https://cc.storyfox.cz/" %}
 
 Click or press Enter to insert your block. From here, you’ll be able to edit it as needed.
+{% endstep %}
+
+{% step %}
+#### Claude AI Templates
+
+Here you have list of best claude skills, agents, comands, settings, hooks
+
+[https://app.aitmpl.com/skills](https://app.aitmpl.com/skills)
+
+
 {% endstep %}
 {% endstepper %}
 
@@ -48,6 +54,10 @@ GitBook supports importing content from many popular writing tools and formats. 
 
 <div data-full-width="false"><figure><img src="https://gitbookio.github.io/onboarding-template-images/quickstart-import.png" alt=""><figcaption></figcaption></figure></div>
 
+###
+
 ### Sync a repository
 
 GitBook also allows you to set up a bi-directional sync with an existing repository on GitHub or GitLab. Setting up Git Sync allows you and your team to write content in GitBook or in code, and never have to worry about your content becoming out of sync.
+
+<figure><img src="../.gitbook/assets/image.png" alt=""><figcaption></figcaption></figure>

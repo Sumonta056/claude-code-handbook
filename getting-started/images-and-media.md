@@ -52,7 +52,19 @@ Fullstack specific findings:\
 3\. Custom hooks, Utils, Constanst are mystery to them. Any Utils or Custom hook should have proper doccumentation. I use TS and JsDoc.\
 4\. Modern web or framework feature are often ignored by them.
 
-<br>
+
+
+Default to Sonnet. Only reach for Opus on gnarly multi-file refactors or hard debugging.\
+\
+Close chats after each task instead of letting them sprawl. When a chat must continue, ask Claude to summarize the state in 500 words, open a fresh chat, and paste the summary. You just replaced 10,000 tokens with 500.\
+\
+Stop uploading PDFs. Convert to markdown first. A 10-page PDF drops from 8,000 tokens to about 2,500. Same content.\
+\
+For Claude Code, the single biggest win is RTK ([**https://lnkd.in/gU6fqBEN**](https://www.linkedin.com/safety/go/?url=https%3A%2F%2Flnkd%2Ein%2FgU6fqBEN\&urlhash=1RcF\&mt=Adt3Q-JSYIvP2P7gNa1TuA0bhlKZzZ6_rI2-BLwXBb8H_gxbTv3Np9hX2UIrdlxde-4sUy0Dhec0PhtrSpVw7FOi8W3uiwaNiUsnchNKxEnSiAYA3j-CoHyCkg\&isSdui=true)). It is a Rust CLI proxy that filters noisy command output before it hits your context.\
+\
+Their numbers show \~80% reduction in a typical session. Install, restart, forget. It just works.\
+\
+I also built a low-token prompt template that bakes all of this into reusable rules. I am updating it whenever I find something new.<br>
 
 
 
