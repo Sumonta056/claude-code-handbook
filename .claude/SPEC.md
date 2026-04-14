@@ -1,0 +1,1 @@
+Product specification. Features, data models, pricing, user roles, API integrations. Every "what" and "why" answered before "how."

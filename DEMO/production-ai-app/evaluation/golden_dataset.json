@@ -1,0 +1,17 @@
+[
+  {
+    "query": "How does the code query endpoint work?",
+    "expected_route": "code",
+    "expected_snippet": "Code-focused answer"
+  },
+  {
+    "query": "Show me the latest public guidance",
+    "expected_route": "web",
+    "expected_snippet": "Web-style answer"
+  },
+  {
+    "query": "How do caching and retrieval fit together?",
+    "expected_route": "rag",
+    "expected_snippet": "Grounded answer"
+  }
+]

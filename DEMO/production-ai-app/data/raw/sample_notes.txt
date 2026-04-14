@@ -1,0 +1,1 @@
+Hybrid retrieval combines lexical and semantic signals.

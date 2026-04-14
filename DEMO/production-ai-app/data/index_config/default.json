@@ -1,0 +1,4 @@
+{
+  "index_name": "demo-index",
+  "embedding_model": "local-demo"
+}
