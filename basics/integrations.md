@@ -1,14 +1,32 @@
 ---
 icon: plug-circle-plus
+layout:
+  width: default
+  title:
+    visible: true
+  description:
+    visible: true
+  tableOfContents:
+    visible: true
+  outline:
+    visible: true
+  pagination:
+    visible: true
+  metadata:
+    visible: true
+  tags:
+    visible: true
 ---
 
 # Master Claude.md!
 
+<figure><img src="../.gitbook/assets/Claude.png" alt="" width="563"><figcaption></figcaption></figure>
+
 {% hint style="info" %}
-CLAUDE\[.]md should target under 200 lines per file
+NT: CLAUDE.md should be under 200 lines per file
 {% endhint %}
 
-If you have started using Claude Code, you have already met `CLAUDE.md`.
+If you have started using Claude Code, you have already know about `CLAUDE.md`.
 
 It sits at the root of your project. Claude reads it automatically at the start of every single session. No prompting required, no manual passing of context. It just loads.
 
@@ -20,17 +38,17 @@ This guide is everything I have learned about writing a `CLAUDE.md` that actuall
 
 ***
 
-### First, Why This File Matters So Much
+### First, Why This File Matters So Much?
 
-Claude Code is stateless. Every session starts from zero. Claude does not remember your last conversation, your project decisions, your tech stack, or what you told it last Tuesday.
+<mark style="color:$warning;">**Claude Code is stateless**</mark><mark style="color:$warning;">.</mark> Every session starts from zero. Claude does not remember your last conversation, your project decisions, your tech stack, or what you told it last Tuesday.
 
 The only exception is what you put in `CLAUDE.md`.
 
-Think of it this way: Claude is a very capable new engineer who joins your team fresh every single morning. No memory of yesterday. No context from last week. Brilliant, fast, but starting completely blank. `CLAUDE.md` is your onboarding doc for that engineer. The better the doc, the less time you spend repeating yourself and correcting the same mistakes.
+Think of it this way: Claude is a very capable new engineer who joins your team fresh every single morning. No memory of yesterday. No context from last week. Brilliant, fast, but starting completely blank. <mark style="color:$success;">**`CLAUDE.md`**</mark><mark style="color:$success;">**&#x20;**</mark><mark style="color:$success;">**is your onboarding doc for that engineer.**</mark> The better the doc, the less time you spend repeating yourself and correcting the same mistakes.
 
 There is also a hard limit worth understanding. Research shows that frontier LLMs can reliably follow roughly 150 to 200 instructions. Claude Code’s own system prompt already uses around 50 of those slots before your file even loads. That means your `CLAUDE.md` has maybe 100 to 150 reliable instruction slots. Every unnecessary line you add eats into that budget and dilutes the instructions that actually matter.
 
-Short, accurate, and specific beats long, comprehensive, and vague. Every time.
+Short, accurate, and specific vs long, comprehensive, and vague. Every time.
 
 ***
 
@@ -38,7 +56,7 @@ Short, accurate, and specific beats long, comprehensive, and vague. Every time.
 
 When you write `CLAUDE.md` for the first time, the goal is not to document everything about your project. The goal is to communicate the facts that, if missing, will cause Claude to get things wrong in ways that waste your time.
 
-A useful question to ask yourself: what would a new engineer misunderstand or get wrong in their first week here? That is what belongs in this file.
+<mark style="color:$warning;">A useful question to ask yourself: what would a new engineer misunderstand or get wrong in their first week here? That is what belongs in this file.</mark>
 
 There are four categories worth prioritizing on day one.
 
@@ -57,6 +75,8 @@ Build, test, lint, local dev server. Write them down exactly. If your test comma
 
 Do not make Claude guess the package manager. If you use `pnpm` and you do not say so, Claude will use `npm`. Every time. Because that is what most projects use.
 
+> Example: I want a quick format and lint check whenever Claude generates code. Instead of repeating the instruction every time, we just add this rule via a command in `Claude.md`.
+
 #### 2. Project-Specific Constraints and Pitfalls
 
 These are the invisible landmines. The things that are not obvious from reading the code but will cause a mess if Claude gets them wrong.
@@ -70,7 +90,9 @@ These are the invisible landmines. The things that are not obvious from reading 
 - NEVER commit .env files
 ```
 
-Every time you catch yourself correcting Claude for the same mistake twice, that correction belongs here. The pattern is: correction happens once, you fix it yourself. It happens twice, you write it down.
+Every time you catch yourself correcting Claude for the same mistake twice, that correction belongs here.&#x20;
+
+> The pattern is: correction happens once, you fix it yourself. It happens twice, you write it down.
 
 #### 3. Architecture Context
 
@@ -87,6 +109,58 @@ What each directory does, what the layering rules are, what “shared” means i
 
 Without this, Claude will make plausible-looking architectural decisions that violate your actual boundaries. It has no way to know your layering rules unless you tell it.
 
+> One thing I suggest (and I normally do) instead of writing any architectural decision directly in the Claude.MD file is to create a.doc folder and keep that architectural documentation, requirements, and planning in that file and just map it in the Claude.md
+
+{% code overflow="wrap" expandable="true" %}
+```markdown
+├── docs/
+│   ├── ARCHITECTURE.md
+│   ├── API_DESIGN.md
+│   ├── DATABASE_SCHEMA.md
+│   └── DEPLOYMENT.md
+├── Claude.md
+└── src/
+```
+{% endcode %}
+
+{% code title="CLAUDE.md" overflow="wrap" expandable="true" %}
+```markdown
+# Project Overview
+
+## Architecture & Design Decisions
+See [`docs/ARCHITECTURE.md`](./docs/ARCHITECTURE.md) for:
+- System design & component structure
+- Tech stack rationale
+- Scalability approach
+
+## API Specification
+See [`docs/API_DESIGN.md`](./docs/API_DESIGN.md) for:
+- Endpoint definitions
+- Request/response schemas
+- Authentication flow
+
+## Database Design
+See [`docs/DATABASE_SCHEMA.md`](./docs/DATABASE_SCHEMA.md) for:
+- Entity relationships
+- Indexing strategy
+- Migration approach
+
+## Deployment & DevOps
+See [`docs/DEPLOYMENT.md`](./docs/DEPLOYMENT.md) for:
+- Infrastructure setup
+- CI/CD pipeline
+- Environment configuration
+```
+{% endcode %}
+
+**Benefits:**
+
+* Claude.md stays as a **navigation hub** (quick scan)
+* Deep dives live in separate docs (version-controllable, searchable)
+* Easy to link from code comments: `// See docs/ARCHITECTURE.md#Components`
+* Scales well as project grows
+* Helps to keep Claude.md concise, short and more accurate!
+
 #### 4. The Baseline Workflow
 
 Branch naming, PR requirements, pre-commit checks. One or two sentences is enough.
@@ -98,53 +172,104 @@ Branch naming, PR requirements, pre-commit checks. One or two sentences is enoug
 - Every PR needs at least one unit test for new logic
 ```
 
-***
+For example, in my project, I have specific conventions for branch naming and commit messages. Instead of manually checking file to remember everything, I just added a rule for these conventions. You can also add other workflow rules like this, such as formatting, unit testing, validation checks, etc.
+
+{% code title="Claude.md" overflow="wrap" expandable="true" %}
+````markdown
+### Formatting & Linting
+- **Run before commit:**
+```bash
+  npm run lint:fix
+  ./gradlew checkstyleMain
+```
+
+### Code Formats
+-  commit message: `TASK-ID: feat(scope): description`
+- Branch Naming Pattern
+  - Format: `feat/TASK-ID-short-description`
+  - Struture: `<type>/<TASK-ID>-<short-description>`
+  - Lowercase, hyphens only && Keep description ≤ 3 words
+
+````
+{% endcode %}
 
 ### A Complete Real-World Example
 
 Here is what a solid `CLAUDE.md` looks like for a Next.js project. Clean, specific, and under 50 lines:
 
-```md
+{% code title="" overflow="wrap" lineNumbers="true" %}
+````markdown
 # Project: ShopFront
 
 Next.js 14 e-commerce app with App Router, Stripe payments, and Prisma ORM.
 
 ## Stack
-- TypeScript strict mode
-- Tailwind CSS for styling (no custom CSS files)
-- Prisma for database access
-- pnpm as package manager (not npm, not yarn)
+- Backend: Node.js 20 + Express + Prisma + TypeScript
+- Databases: PostgreSQL (primary) + MongoDB (metadata) + OpenSearch (search)
+- Frontend: Nuxt 3 + Vue 3
+- DevOps: Docker + GitHub Actions + AWS (S3, EC2, RDS)
+- TypeScript strict mode & Tailwind CSS for styling (no custom CSS files)
 
-## Commands
-- `pnpm dev`: Start dev server on port 3000
-- `pnpm test`: Run Jest tests
-- `pnpm test:e2e`: Run Playwright end-to-end tests
-- `pnpm lint`: ESLint check
-- `pnpm db:migrate`: Run Prisma migrations
+## 1. Common Commands
 
-## Architecture
-- `/app`: Next.js App Router pages
-- `/components/ui`: Reusable UI only
-- `/lib`: Shared utilities
-- `/services`: Domain logic and DB access
-- `/prisma`: Schema and migrations
-- `/app/api`: API routes
+Use exactly as written. Do not substitute package managers. Use `pnpm` only. Never use npm or yarn.
+
+```bash
+pnpm dev                 # Local dev server (port 8080)
+pnpm test                # Run Jest tests
+pnpm lint:fix            # Auto-fix ESLint issues
+pnpm typecheck           # TypeScript check
+pnpm db:migrate          # Apply Prisma migrations
+pnpm build               # Production build
+```
+
+## 2. Important Rules & Constraints & Common Mistakes
+
+- NEVER hard DELETE. All deletes are soft via `deleted_at` timestamp. Always include `where: { deleted_at: null }` in queries.
+- Media files live in AWS S3, never locally. Use `MediaService.uploadToS3()`.
+- NEVER edit `/generated`. Auto-generated by build scripts. Fix source and rebuild.
+- NEVER commit `.env` files.
+- All `/payments/*` API calls must route through `src/services/PaymentService.ts`.
+- Use OpenSearch via SearchService. Do not query OpenSearch directly.
+- Use Gateway in production. External API calls go through Gatewau (port 8001).
+- No Hardcoded env vars | Use `process.env.VAR_NAME`
+
+### Architecture Boundaries
+
+- `/components/ui`: Reusable UI components only. No business logic.
+- `/services`: Domain logic & external API ownership (Auth, Payment, Search, Media).
+- `/lib/utils`: Pure utility functions only. No side effects.
+- `/api`: Thin wrappers around services.
+
+## 3. Reference Architecture & Design Decisions
+
+- See `docs/ARCHITECTURE.md` for system design & component structure.
+- See `docs/API_DESIGN.md` for REST endpoints & authentication flow.
+- See `docs/DATABASE_SCHEMA.md` for entity relationships & indexing.
+
+## 4. Git Workflow
+
+- See `docs/CONVENTIONS.md` for full workflow and CI/CD, Docker & environment setup..
+
+Branch naming: `feat/TASK-ID-short-description`
+Example : feat/PROJ-123-user-auth
+
+Commit messages: `TASK-ID: type(scope): description`
+Example : PROJ-123: feat(auth): add JWT refresh token
+
+Before pushing: [MUST DO]
+```bash
+pnpm lint:fix && pnpm typecheck && pnpm test:ci
+```
 
 ## Code Style
 - Named exports only, no default exports
 - No `any` types
 - Destructure imports where possible
 
-## Critical Rules
-- NEVER commit .env files
-- Stripe webhook handler in /app/api/webhooks/stripe must validate signatures
-- Product images stored in Cloudinary, not locally
-- Users table uses soft deletes only, never hard DELETE
-
-## Reference
-- See @docs/auth-flow.md for authentication details
-- See @docs/api-patterns.md for API design conventions
-```
+Expected: Server on `http://localhost:8080`, DB connected, OpenSearch ready.
+````
+{% endcode %}
 
 Notice what is not in there. No project description. No badges. No motivation or philosophy. No aspirational guidelines like “we value clean code.” Just the things Claude needs to not make mistakes.
 
