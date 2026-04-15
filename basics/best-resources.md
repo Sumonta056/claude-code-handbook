@@ -39,7 +39,15 @@ High-performance CLI proxy that reduces LLM token consumption by 60-90%
 
 [https://app.aitmpl.com/skills](https://app.aitmpl.com/skills)
 
-####
+***
+
+#### Claude History!
+
+Fuzzy-search Claude Code conversation history
+
+[https://github.com/raine/claude-history](https://github.com/raine/claude-history)
+
+***
 
 #### Awesome Claude Code
 
