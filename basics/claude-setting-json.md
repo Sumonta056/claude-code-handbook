@@ -4,7 +4,7 @@ icon: box-circle-check
 
 # Claude Setting.json
 
-<figure><img src="../.gitbook/assets/image (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../.gitbook/assets/image (1) (1).png" alt=""><figcaption></figcaption></figure>
 
 How to make UI like this ?
 

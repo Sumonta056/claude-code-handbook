@@ -4,7 +4,8 @@
 
 * [🤖 About](README.md)
 * [Quickstart](getting-started/quickstart.md)
-* [Guidelines!](getting-started/images-and-media.md)
+* [Guidelines!](getting-started/images-and-media/README.md)
+  * [How to Never Hit Claude Rate Limits!](getting-started/images-and-media/how-to-never-hit-claude-rate-limits.md)
 
 ## Basics
 
@@ -16,6 +17,12 @@
 * [Commands ?](basics/commands.md)
 * [Useful Plugins + Skills!](basics/useful-plugins-+-skills.md)
 * [Best Resources ):](basics/best-resources.md)
+
+## Claude Desktop
+
+* [Claude Chat](claude-desktop/claude-chat.md)
+* [Claude Cowork!](claude-desktop/claude-cowork.md)
+* [Claude Code](claude-desktop/claude-code.md)
 
 ## Resources
 

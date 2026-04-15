@@ -195,7 +195,7 @@ For example, in my project, I have specific conventions for branch naming and co
 
 ### A Complete Real-World Example
 
-Here is what a solid `CLAUDE.md` looks like for a Next.js project. Clean, specific, and under 50 lines:
+Here is what a solid `CLAUDE.md` looks like for a Next.js project. Clean, specific :
 
 {% code title="" overflow="wrap" lineNumbers="true" %}
 ````markdown
@@ -275,17 +275,14 @@ Notice what is not in there. No project description. No badges. No motivation or
 
 ***
 
-### What to Leave Out
+### What to Remove?
 
 This part is underrated. Some things actively make `CLAUDE.md` worse by taking up instruction budget without adding value.
 
-**Rules already enforced by tooling.** If `.eslintrc`, `.prettierrc`, or `tsconfig.json` handles a rule, do not restate it in prose. Claude can read config files. Duplicating creates drift: eventually your `CLAUDE.md` says one thing and the config says another.
-
-**Aspirational guidelines.** “We value clean, readable code” or “prefer simple solutions.” These are not actionable. They do not help Claude make a specific decision. Cut them.
-
-**Standard README content.** Project description, badges, license info, contributor setup instructions. That content exists for humans browsing GitHub, not for Claude’s context window.
-
-**Stale documentation.** An outdated architecture description or deprecated workflow is worse than nothing, because Claude will follow it confidently. If you are not certain something is still accurate, delete it or fix it before adding it.
+* **Rules already enforced by tooling.** If `.eslintrc`, `.prettierrc`, or `tsconfig.json` handles a rule, do not restate it in prose. Claude can read config files. Duplicating creates drift: eventually your `CLAUDE.md` says one thing and the config says another.
+* **Aspirational guidelines.** “We value clean, readable code” or “prefer simple solutions.” These are not actionable. They do not help Claude make a specific decision. Cut them.
+* **Standard README content.** Project description, badges, license info, contributor setup instructions. That content exists for humans browsing GitHub, not for Claude’s context window.
+* **Stale documentation.** An outdated architecture description or deprecated workflow is worse than nothing, because Claude will follow it confidently. If you are not certain something is still accurate, delete it or fix it before adding it.
 
 ***
 
@@ -299,11 +296,13 @@ The practical implication: a bloated `CLAUDE.md` does not just fail on the extra
 
 The test for every line in your file: would Claude make a mistake without this? If the answer is no, or even “probably not,” cut it. The official guidance from the Claude Code team is to keep it under 300 lines, and shorter is better. Many experienced users keep it under 100 lines by moving detailed content to imported files.
 
+{% hint style="danger" %}
 A real signal that your file is too long: Claude asks you something that is clearly answered in `CLAUDE.md`. When that happens, the file is likely either too long, too vague, or both.
+{% endhint %}
 
 ***
 
-### Use @imports to Keep It Lean
+### Extend Claude.md! Use @imports to Keep It Lean
 
 Once your root file starts exceeding 60 to 80 lines, it is time to split.
 
@@ -335,13 +334,13 @@ Imports can be recursive too. A file you import can import other files. Use this
 
 ***
 
-### Monorepos Need a Different Structure
+### Monorepos Need a <mark style="color:$warning;">Different Structure!</mark>
 
 A single root `CLAUDE.md` does not scale well in a monorepo. Service-specific rules mixed with global rules become a maintenance headache fast. Someone updates the API service’s deploy process and now the frontend’s context has a paragraph about something completely irrelevant.
 
 The structure that works:
 
-```
+```markdown
 CLAUDE.md                        # global constraints only
 packages/api/CLAUDE.md           # api-specific rules
 packages/web/CLAUDE.md           # web-specific rules
@@ -388,7 +387,7 @@ The home folder version is powerful for personal preferences you want everywhere
 
 ***
 
-### CLAUDE.md Is a Living Document, Not a Setup Task
+### CLAUDE.md Is a <mark style="color:$success;">Living Document, Not a Setup Task</mark>
 
 Most developers write `CLAUDE.md` once during project setup and never touch it again. That is how it becomes stale and harmful.
 
@@ -396,25 +395,22 @@ The right mental model is: `CLAUDE.md` is a code file. It should be reviewed in 
 
 A few habits that keep it honest:
 
-**Update in the same PR where you change what it describes.** If you migrate from `yarn` to `pnpm`, the command update and the `CLAUDE.md` update should be in the same commit. Treat it like any other tracked file.
-
-**Delete stale content aggressively.** It is tempting to keep old rules “just in case.” Do not. If something no longer reflects how the project works, remove it. A shorter accurate file beats a longer partially-wrong one.
-
-**Do a quarterly pass.** Once every few months, read through and ask: is each item still true? Is it still actionable? Could it be said in fewer words?
-
-**Let Claude’s questions tell you what’s missing.** If Claude asks something about your project that should have been obvious, that is a signal to add it to the file. The questions are a feedback loop.
+* **Update in the same PR where you change what it describes.** If you migrate from `yarn` to `pnpm`, the command update and the `CLAUDE.md` update should be in the same commit. Treat it like any other tracked file.
+* **Delete stale content aggressively.** It is tempting to keep old rules “just in case.” Do not. If something no longer reflects how the project works, remove it. A shorter accurate file beats a longer partially-wrong one.
+* **Do a quarterly pass.** Once every few months, read through and ask: is each item still true? Is it still actionable? Could it be said in fewer words?
+* **Let Claude’s questions tell you what’s missing.** If Claude asks something about your project that should have been obvious, that is a signal to add it to the file. The questions are a feedback loop.
 
 ***
 
 ### Two Bonus Features Worth Knowing
 
-#### The /init Command
+The `/init` Command
 
 If you are starting from scratch, run `/init` inside Claude Code. It analyzes your codebase, detects build systems, test frameworks, and directory structure, and generates a starter `CLAUDE.md`.
 
 The output tends to be bloated. Treat it as a draft, not a finished file. Read through it, remove anything that does not meet the “would Claude make a mistake without this?” test, and add whatever it missed. Starting from a generated draft is faster than starting from blank, but the draft needs editing.
 
-#### The /reflection Command
+The `/reflection` Command
 
 At the end of a session, run `/reflection`. Claude Code will review what happened in the session and surface lessons that should probably be written into `CLAUDE.md` as permanent rules.
 
@@ -426,17 +422,15 @@ This is how you close the loop. Instead of manually translating corrections into
 
 When you are not sure what to write, use this framework to check whether you have covered the right things.
 
-**WHAT:** What is the tech stack? What is the project structure? Give Claude a map. Which directories are which? What are the apps, what are the shared packages, and what is each one for?
-
-**WHY:** What is the purpose of the project? What is each part doing and why? Context about intent helps Claude make better decisions when it encounters ambiguous situations.
-
-**HOW:** How should Claude work on this project? `bun` instead of `node`? `pnpm` instead of `npm`? How does Claude verify its changes? How does it run tests, typechecks, and compilation steps?
+* **WHAT:** What is the tech stack? What is the project structure? Give Claude a map. Which directories are which? What are the apps, what are the shared packages, and what is each one for?
+* **WHY:** What is the purpose of the project? What is each part doing and why? Context about intent helps Claude make better decisions when it encounters ambiguous situations.
+* **HOW:** How should Claude work on this project? `bun` instead of `node`? `pnpm` instead of `npm`? How does Claude verify its changes? How does it run tests, typechecks, and compilation steps?
 
 Every good `CLAUDE.md` covers all three. Most files cover WHAT but skip WHY and only partially cover HOW. That is where the gaps show up in practice.
 
 ***
 
-### Summary: The Core Principle
+### Summary
 
 `CLAUDE.md` is not documentation. It is collaboration infrastructure.
 
