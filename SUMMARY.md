@@ -6,6 +6,7 @@
 * [Quickstart](getting-started/quickstart.md)
 * [Guidelines!](getting-started/images-and-media/README.md)
   * [How to Never Hit Claude Rate Limits!](getting-started/images-and-media/how-to-never-hit-claude-rate-limits.md)
+  * [Token Compression Tools!](getting-started/images-and-media/token-compression-tools.md)
 
 ## Basics
 
