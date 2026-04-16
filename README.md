@@ -28,3 +28,4 @@ This is Sumanta Saha Mridul, an Associate Software Engineer in Cefalo. In this G
 
 ### Jump right in
 
+{% embed url="https://youtu.be/oqSgYUIeQeE?si=ElgKZC6-2VlWYrq9" %}
