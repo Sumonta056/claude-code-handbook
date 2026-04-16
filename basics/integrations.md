@@ -197,11 +197,11 @@ For example, in my project, I have specific conventions for branch naming and co
 
 Here is what a solid `CLAUDE.md` looks like for a Next.js project. Clean, specific :
 
-{% code title="" overflow="wrap" lineNumbers="true" %}
+{% code title="CLAUDE.md" overflow="wrap" lineNumbers="true" %}
 ````markdown
 # Project: ShopFront
 
-Next.js 14 e-commerce app with App Router, Stripe payments, and Prisma ORM.
+E-commerce app with App Router, Stripe payments, and Prisma ORM.
 
 ## Stack
 - Backend: Node.js 20 + Express + Prisma + TypeScript
@@ -218,7 +218,6 @@ Use exactly as written. Do not substitute package managers. Use `pnpm` only. Nev
 pnpm dev                 # Local dev server (port 8080)
 pnpm test                # Run Jest tests
 pnpm lint:fix            # Auto-fix ESLint issues
-pnpm typecheck           # TypeScript check
 pnpm db:migrate          # Apply Prisma migrations
 pnpm build               # Production build
 ```

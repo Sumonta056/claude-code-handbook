@@ -10,7 +10,7 @@ I think most of the time you actually don't need this token compromiser compress
 \
 Some of the famous tooks like&#x20;
 
-* [Caveman](https://github.com/juliusbrussee/caveman) : Why use many token when few token do trick — Claude Code skill that cuts 65% of tokens by talking like caveman
+* [Caveman](https://github.com/juliusbrussee/caveman) ⭐⭐⭐  : Why use many token when few token do trick — Claude Code skill that cuts 65% of tokens by talking like caveman
 * [Grapify](https://graphify.net/) : Graphify is an open-source skill that helps AI coding assistants understand multi-modal codebases by building a queryable knowledge graph from code, docs, papers and diagrams.
 * [RTK](https://github.com/rtk-ai/rtk) : CLI proxy that reduces LLM token consumption by 60-90% on common dev commands. Single Rust binary, zero dependencies
 

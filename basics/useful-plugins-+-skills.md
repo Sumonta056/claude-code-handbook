@@ -4,21 +4,78 @@ icon: meteor
 
 # Useful Plugins + Skills!
 
-#### Superpowers
+#### Agent Skills ⭐⭐⭐ <a href="#claude-mem" id="claude-mem"></a>
 
-Superpowers is a complete software development workflow for your coding agents, built on top of a set of composable "skills" and some initial instructions that make sure your agent uses them.
+**Production-grade engineering skills for AI coding agents.**
 
-Link : [https://github.com/obra/superpowers](https://github.com/obra/superpowers)
+Skills encode the workflows, quality gates, and best practices that senior engineers use when building software. These ones are packaged so AI agents follow them consistently across every phase of development.
 
-{% code overflow="wrap" expandable="true" %}
 ```
-/plugin install superpowers@claude-plugins-official
+  DEFINE          PLAN           BUILD          VERIFY         REVIEW          SHIP
+ ┌──────┐      ┌──────┐      ┌──────┐      ┌──────┐      ┌──────┐      ┌──────┐
+ │ Idea │ ───▶ │ Spec │ ───▶ │ Code │ ───▶ │ Test │ ───▶ │  QA  │ ───▶ │  Go  │
+ │Refine│      │  PRD │      │ Impl │      │Debug │      │ Gate │      │ Live │
+ └──────┘      └──────┘      └──────┘      └──────┘      └──────┘      └──────┘
+  /spec          /plan          /build        /test         /review       /ship
+```
+
+| What you're doing    | Command          | Key principle           |
+| -------------------- | ---------------- | ----------------------- |
+| Define what to build | `/spec`          | Spec before code        |
+| Plan how to build it | `/plan`          | Small, atomic tasks     |
+| Build incrementally  | `/build`         | One slice at a time     |
+| Prove it works       | `/test`          | Tests are proof         |
+| Review before merge  | `/review`        | Improve code health     |
+| Simplify the code    | `/code-simplify` | Clarity over cleverness |
+| Ship to production   | `/ship`          | Faster is safer         |
+
+{% code overflow="wrap" %}
+```
+/plugin install agent-skills@addy-agent-skills
+```
+{% endcode %}
+
+Link : [https://github.com/addyosmani/agent-skills](https://github.com/addyosmani/agent-skills)
+
+***
+
+#### Karpathy-Inspired Claude Code Guidelines ⭐⭐⭐ <a href="#claude-mem" id="claude-mem"></a>
+
+A single CLAUDE.md file to improve Claude Code behavior, derived from Andrej Karpathy's observations on LLM coding pitfalls.
+
+Link : [https://github.com/forrestchang/andrej-karpathy-skills](https://github.com/forrestchang/andrej-karpathy-skills)
+
+{% code overflow="wrap" %}
+```
+/plugin install andrej-karpathy-skills@karpathy-skills
 ```
 {% endcode %}
 
 ***
 
-#### Claude-Mem <a href="#claude-mem" id="claude-mem"></a>
+#### Codex plugin for Claude Code ⭐⭐⭐ <a href="#claude-mem" id="claude-mem"></a>
+
+Use Codex from Claude Code to review code or delegate tasks.
+
+{% code overflow="wrap" %}
+```
+/plugin marketplace add openai/codex-plugin-cc
+```
+{% endcode %}
+
+{% code overflow="wrap" %}
+```
+/codex:review --background
+/codex:status
+/codex:result
+```
+{% endcode %}
+
+Link : [https://github.com/openai/codex-plugin-cc](https://github.com/openai/codex-plugin-cc)
+
+***
+
+#### Claude-Mem ⭐⭐⭐ <a href="#claude-mem" id="claude-mem"></a>
 
 Persistent memory compression system for Claude Code
 
@@ -30,6 +87,20 @@ Link : [https://github.com/thedotmack/claude-mem](https://github.com/thedotmack/
 ```
 /plugin marketplace add thedotmack/claude-mem
 /plugin install claude-mem
+```
+{% endcode %}
+
+***
+
+#### Superpowerss
+
+Superpowers is a complete software development workflow for your coding agents, built on top of a set of composable "skills" and some initial instructions that make sure your agent uses them.
+
+Link : [https://github.com/obra/superpowers](https://github.com/obra/superpowers)
+
+{% code overflow="wrap" expandable="true" %}
+```
+/plugin install superpowers@claude-plugins-official
 ```
 {% endcode %}
 

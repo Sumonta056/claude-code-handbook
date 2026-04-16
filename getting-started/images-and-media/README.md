@@ -17,8 +17,13 @@ icon: image-landscape
 5. Close chats after each task instead of letting them sprawl. When a chat must continue, ask Claude to summarize the state in 500 words, open a fresh chat, and paste the summary. You just replaced 10,000 tokens with 500.
 6. Use Default to Sonnet. Only reach for Opus on gnarly multi-file refactors or hard debugging. Also try to use Haiku for basic question asking and chats!
 7. Opus & Sonnet has effort parameter (LOW | MEDIUM | HIGH) you can control how much effort you think that problem should require. This is a real deal that how much effort do you think the Agent might require to find out the problem or you are handing over the solution to your agent and expecting agent just applying it for you. Use effort parameter wisely to manage your token.
+8.  Use hooks for things that should happen every time
+
+    Formatting, validation, guardrails, notifications - anything deterministic is better handled by the system than by hoping the model remembers.
 
 
+
+> Claude.md : Keep the most important constraints at the very top. Claude Code has primacy bias. The first things it reads stick hardest.
 
 ### Be Careful!
 
@@ -61,8 +66,9 @@ Once you hit the limit: Example (approx, varies by usage):
 4. You can resume your Claude Code season from the point where you have stopped. (Though this is going to be costly as we are seeing a tendency that model/tool providers are reducing Caching time and experimenting with it.)
 5. You session will not be lost and the token that you spent will not be waste totally. But if you have urgency then you can't work with AI in that time if you have no way out.
 
-\
 <br>
 
+#### Master Claude Commands !
 
+<figure><img src="../../.gitbook/assets/image (2).png" alt=""><figcaption></figcaption></figure>
 

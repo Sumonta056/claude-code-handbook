@@ -11,11 +11,11 @@
 ## Basics
 
 * [Master Claude.md!](basics/integrations.md)
+* [Claude Setting.json](basics/claude-setting-json.md)
+* [.claude Folder](basics/.claude-folder.md)
 * [Skills + Command!](basics/interactive-blocks.md)
 * [Agents!](basics/editor.md)
 * [MCP Servers!](basics/markdown.md)
-* [Claude Setting.json](basics/claude-setting-json.md)
-* [Commands ?](basics/commands.md)
 * [Useful Plugins + Skills!](basics/useful-plugins-+-skills.md)
 * [Best Resources ):](basics/best-resources.md)
 
