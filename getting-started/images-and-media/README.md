@@ -21,8 +21,6 @@ icon: image-landscape
 
     Formatting, validation, guardrails, notifications - anything deterministic is better handled by the system than by hoping the model remembers.
 
-
-
 > Claude.md : Keep the most important constraints at the very top. Claude Code has primacy bias. The first things it reads stick hardest.
 
 ### Be Careful!
@@ -67,6 +65,18 @@ Once you hit the limit: Example (approx, varies by usage):
 5. You session will not be lost and the token that you spent will not be waste totally. But if you have urgency then you can't work with AI in that time if you have no way out.
 
 <br>
+
+{% hint style="success" %}
+**A small request:**
+
+Would You like donate a small amount : [**Click Here**](https://forms.gle/S1FJaEpzGcnMQbm77)
+
+_If you find value in what we’re doing, please **subscribe to My YouTube channel** & Newsletter and **share this initiative** with others in your network. Together, we can build a stronger tech community._&#x20;
+
+**Want to learn a topic like this? \[**[**Subscribe to My YouTube Channel**](https://www.youtube.com/@LearnCodewithPS5638)**]**
+
+**Code & Career Golpo Newsletter:** [Subscribe to My Newsletter](https://www.linkedin.com/newsletters/code-career-golpo-7309186050084544512/)
+{% endhint %}
 
 #### Master Claude Commands !
 

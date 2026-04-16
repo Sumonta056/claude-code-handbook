@@ -29,3 +29,53 @@ Then Paste this configs :&#x20;
 Now paste the file in the .claude system root folder :&#x20;
 
 {% file src="../.gitbook/assets/statusline-command.sh" %}
+
+***
+
+In this section, we will explore the various settings available in Claude and how to configure them to optimize your experience. Claude environment variables will allow your to customize the behavior of Claude and tailor it to your specific needs.
+
+#### Official Documentation
+
+All of the claude code settings and environment variables are recorded in following website:
+
+* [Environment Variables Documentation](https://code.claude.com/docs/en/env-vars)
+* [Available Settings Documentation](https://code.claude.com/docs/en/settings#available-settings)
+
+#### Global Claude Settings
+
+Use global claude settings to apply common settings across all your projects.
+
+```bash
+code ~/.claude/settings.json
+```
+
+Examaple settings for environment:
+
+```json
+"env": {
+    "cleanupPeriodDays": "120", //Default value for cleanupPeriodDays is 30 days.
+    "BASH_MAX_OUTPUT_LENGTH": "150000", //Default value for BASH_MAX_OUTPUT_LENGTH is 30000.
+},
+```
+
+**Disable analytics for claude code:**
+
+```
+"DISABLE_TELEMETRY": "1"
+"DISABLE_ERROR_REPORTING": "1"
+"CLAUDE_CODE_DISABLE_FEEDBACK_SURVEY": "1"
+```
+
+***
+
+{% hint style="success" %}
+**A small request:**
+
+Would You like donate a small amount : [**Click Here**](https://forms.gle/S1FJaEpzGcnMQbm77)
+
+_If you find value in what we’re doing, please **subscribe to My YouTube channel** & Newsletter and **share this initiative** with others in your network. Together, we can build a stronger tech community._&#x20;
+
+**Want to learn a topic like this? \[**[**Subscribe to My YouTube Channel**](https://www.youtube.com/@LearnCodewithPS5638)**]**
+
+**Code & Career Golpo Newsletter:** [Subscribe to My Newsletter](https://www.linkedin.com/newsletters/code-career-golpo-7309186050084544512/)
+{% endhint %}
