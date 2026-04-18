@@ -23,6 +23,23 @@ icon: image-landscape
 
 > Claude.md : Keep the most important constraints at the very top. Claude Code has primacy bias. The first things it reads stick hardest.
 
+<figure><img src="../../.gitbook/assets/image (12).png" alt=""><figcaption></figcaption></figure>
+
+If I had to pick one habit that signals good context management, it’s rewind.
+
+\
+In Claude Code, `double-tapping Esc(or running /rewind)` lets you jump back to any previous message and re-prompt from there. The messages after that point are dropped from the context.
+
+\
+Rewind is often the better approach to correction. For example, Claude reads five files, tries an approach, and it doesn't work. Your instinct may be to type "that didn't work, try X instead." but the better move is to rewind to just after the file reads, and re-prompt with what you learned. "Don't use approach A, the foo module doesn't expose that — go straight to B."
+
+\
+You can also use “summarize from here” to have Claude summarize its learnings and create a handoff message, kind of like a message to the previous iteration of Claude from its future self that tried something and it didn’t work.
+
+<figure><img src="../../.gitbook/assets/image (13).png" alt=""><figcaption></figcaption></figure>
+
+> [Using Claude Code: Session Management & 1M Context](https://x.com/trq212/status/2044548257058328723)
+
 ### Be Careful!
 
 * You don't need all those MCPs: <mark style="color:$danger;">MCP usages a lot of tokens</mark>. I removed Context7 as most of the AGENT can web search now. I use only Click up and MongoDB MCP. You can now enable project based MCPs so turn on and off as needed.
@@ -41,7 +58,7 @@ icon: image-landscape
 
 
 
-### Good To know !
+### Good To know!
 
 <mark style="color:$success;">Session limitation</mark> : The Claude Pro subscription works with a \~5-hour session window and has token/message limits per model.
 
