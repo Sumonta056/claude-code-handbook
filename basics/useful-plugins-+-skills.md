@@ -106,6 +106,18 @@ Link : [https://github.com/obra/superpowers](https://github.com/obra/superpowers
 
 ***
 
+#### Skills Me⭐⭐
+
+The missing pluginmanager for Claude. Detects your project stack and installs the right Claude Code plugins in one command. Search across 4 marketplaces, install, update, and manage — all from the terminal.
+
+{% code overflow="wrap" %}
+```
+skillme init
+```
+{% endcode %}
+
+Link : [https://skillme-cli.vercel.app/](https://skillme-cli.vercel.app/)
+
 #### UI-UX-PRO MAX Skill
 
 An AI SKILL that provide design intelligence for building professional UI/UX multiple platforms
