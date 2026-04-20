@@ -4,17 +4,11 @@ icon: bolt
 
 # Quickstart
 
-<figure><img src="https://gitbookio.github.io/onboarding-template-images/quickstart-hero.png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../.gitbook/assets/M.png" alt="" width="563"><figcaption></figcaption></figure>
 
 {% hint style="info" %}
 If you want to go with Default Roadmap for Claude Code. [Try it Out](https://roadmap.sh/claude-code)
 {% endhint %}
-
-### About Claude!
-
-GitBook offers a range of block types for you to add to your content inline — from simple text and tables, to code blocks and more. These elements will make your pages more useful to readers, and offer extra information and context.
-
-Either start typing below, or press `/` to see a list of the blocks you can insert into your page.
 
 ## Claude Code Roadmap!
 
@@ -46,7 +40,7 @@ Here you have list of best claude skills, agents, comands, settings, hooks
 {% step %}
 #### Claude Project Structure!
 
-<figure><img src="../.gitbook/assets/image (1).png" alt=""><figcaption></figcaption></figure>
+<div><figure><img src="../.gitbook/assets/image.png" alt="" width="375"><figcaption></figcaption></figure> <figure><img src="../.gitbook/assets/image (1) (1).png" alt="" width="375"><figcaption></figcaption></figure></div>
 {% endstep %}
 {% endstepper %}
 
