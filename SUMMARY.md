@@ -12,7 +12,11 @@
 
 * [Master Claude.md!](basics/integrations.md)
 * [Claude Setting.json](basics/claude-setting-json.md)
-* [.claude Folder](basics/.claude-folder.md)
+* [.claude Folder ⭐⭐](basics/.claude-folder/README.md)
+  * [CLAUDE.md vs rules/ ⭐⭐](basics/.claude-folder/claude.md-vs-rules.md)
+  * [The role of hooks/](basics/.claude-folder/the-role-of-hooks.md)
+  * [The role of commands/](basics/.claude-folder/the-role-of-commands.md)
+  * [When should use skills/ & agents/?](basics/.claude-folder/when-should-use-skills-and-agents.md)
 * [Commands + Skills](basics/interactive-blocks/README.md)
   * [Built-in Commands](basics/interactive-blocks/built-in-commands.md)
   * [SKILLs!](basics/interactive-blocks/skills.md)
