@@ -66,7 +66,33 @@ Examaple settings for environment:
 "CLAUDE_CODE_DISABLE_FEEDBACK_SURVEY": "1"
 ```
 
-***
+#### Lock Permssion in Settings
+
+{% code title="" overflow="wrap" lineNumbers="true" %}
+```
+{
+  "$schema": "https://json.schemastore.org/claude-code-settings.json",
+  "permissions": {
+    "allow": [
+      "Bash(npm run *)",
+      "Bash(git status)",
+      "Bash(git diff *)",
+      "Read",
+      "Write",
+      "Edit"
+    ],
+    "deny": [
+      "Bash(rm -rf *)",
+      "Bash(curl *)",
+      "Read(./.env)",
+      "Read(./.env.*)"
+    ]
+  }
+}
+```
+{% endcode %}
+
+
 
 {% hint style="success" %}
 **A small request:**
