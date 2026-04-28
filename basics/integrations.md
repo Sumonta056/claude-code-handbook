@@ -1,7 +1,13 @@
 ---
 icon: plug-circle-plus
+cover: ../.gitbook/assets/Claude.png
+coverY: 0
+coverHeight: 344
 layout:
   width: default
+  cover:
+    visible: true
+    size: hero
   title:
     visible: true
   description:
@@ -19,8 +25,6 @@ layout:
 ---
 
 # Master Claude.md!
-
-<figure><img src="../.gitbook/assets/Claude.png" alt="" width="563"><figcaption></figcaption></figure>
 
 {% hint style="info" %}
 NT: CLAUDE.md should be under 200 lines per file

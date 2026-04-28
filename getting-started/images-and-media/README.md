@@ -99,5 +99,5 @@ _If you find value in what we’re doing, please **subscribe to My YouTube chann
 
 #### Master Claude Commands !
 
-<figure><img src="../../.gitbook/assets/image (2).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image (2) (1).png" alt=""><figcaption></figcaption></figure>
 

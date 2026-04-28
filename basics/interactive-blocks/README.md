@@ -15,6 +15,20 @@ Slash commands are shortcuts that control Claude's behavior during an interactiv
 
 > **Note**: Custom slash commands have been merged into skills. Files in `.claude/commands/` still work, but skills (`.claude/skills/`) are now the recommended approach. Both create `/command-name` shortcuts. See the Skills Guide for the full reference.
 
+{% hint style="info" %}
+List of Command Templates : [https://app.aitmpl.com/commands](https://app.aitmpl.com/commands)
+{% endhint %}
+
+<div data-full-width="true"><figure><img src="../../.gitbook/assets/image (4).png" alt=""><figcaption></figcaption></figure></div>
+
+{% hint style="warning" %}
+List of Skills Template: [https://app.aitmpl.com/skills](https://app.aitmpl.com/skills)&#x20;
+{% endhint %}
+
+<div data-full-width="true"><figure><img src="../../.gitbook/assets/image (5).png" alt=""><figcaption></figcaption></figure></div>
+
+
+
 
 
 
@@ -33,7 +47,7 @@ _If you find value in what we’re doing, please **subscribe to My YouTube chann
 **Code & Career Golpo Newsletter:** [Subscribe to My Newsletter](https://www.linkedin.com/newsletters/code-career-golpo-7309186050084544512/)
 {% endhint %}
 
-<figure><img src="../../.gitbook/assets/image (6).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image (6) (1).png" alt=""><figcaption></figcaption></figure>
 
 
 

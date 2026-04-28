@@ -25,6 +25,7 @@
     * [/review](basics/interactive-blocks/claude-templates/review.md)
     * [/secure](basics/interactive-blocks/claude-templates/secure.md)
 * [Agents!](basics/editor.md)
+* [Hooks!](basics/hooks.md)
 * [MCP Servers!](basics/markdown.md)
 * [Useful Plugins + Skills!](basics/useful-plugins-+-skills.md)
 * [Best Resources ):](basics/best-resources.md)

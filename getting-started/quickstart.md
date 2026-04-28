@@ -1,10 +1,30 @@
 ---
 icon: bolt
+cover: ../.gitbook/assets/M.png
+coverY: 0
+coverHeight: 358
+layout:
+  width: default
+  cover:
+    visible: true
+    size: hero
+  title:
+    visible: true
+  description:
+    visible: true
+  tableOfContents:
+    visible: true
+  outline:
+    visible: true
+  pagination:
+    visible: true
+  metadata:
+    visible: true
+  tags:
+    visible: true
 ---
 
 # Quickstart
-
-<figure><img src="../.gitbook/assets/M.png" alt="" width="563"><figcaption></figcaption></figure>
 
 {% hint style="info" %}
 If you want to go with Default Roadmap for Claude Code. [Try it Out](https://roadmap.sh/claude-code)
@@ -40,7 +60,7 @@ Here you have list of best claude skills, agents, comands, settings, hooks
 {% step %}
 #### Claude Project Structure!
 
-<div><figure><img src="../.gitbook/assets/image.png" alt="" width="375"><figcaption></figcaption></figure> <figure><img src="../.gitbook/assets/image (1) (1).png" alt="" width="375"><figcaption></figcaption></figure></div>
+<div><figure><img src="../.gitbook/assets/image (7).png" alt="" width="375"><figcaption></figcaption></figure> <figure><img src="../.gitbook/assets/image (1) (1) (1).png" alt="" width="375"><figcaption></figcaption></figure></div>
 {% endstep %}
 {% endstepper %}
 
@@ -58,4 +78,4 @@ _If you find value in what we’re doing, please **subscribe to My YouTube chann
 
 ### Claude Code Workflow!
 
-<figure><img src="../.gitbook/assets/image (4).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../.gitbook/assets/image (4) (1).png" alt=""><figcaption></figcaption></figure>

@@ -4,7 +4,7 @@ icon: box-circle-check
 
 # Claude Setting.json
 
-<figure><img src="../.gitbook/assets/image (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../.gitbook/assets/image (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
 
 How to make UI like this ?
 
@@ -30,7 +30,11 @@ Now paste the file in the .claude system root folder :&#x20;
 
 {% file src="../.gitbook/assets/statusline-command.sh" %}
 
-***
+{% hint style="info" %}
+More Claude Settings Tools Integration : [https://app.aitmpl.com/settings](https://app.aitmpl.com/settings)
+{% endhint %}
+
+<div data-full-width="true"><figure><img src="../.gitbook/assets/image (2).png" alt=""><figcaption></figcaption></figure></div>
 
 In this section, we will explore the various settings available in Claude and how to configure them to optimize your experience. Claude environment variables will allow your to customize the behavior of Claude and tailor it to your specific needs.
 

@@ -1,8 +1,15 @@
 ---
 icon: meteor
+cover: ../.gitbook/assets/Screenshot 2026-04-28 at 11.08.26 AM.png
+coverY: 0
+coverHeight: 289
 ---
 
 # Useful Plugins + Skills!
+
+{% hint style="info" %}
+List of Plugins Templates : [https://app.aitmpl.com/plugins](https://app.aitmpl.com/plugins)
+{% endhint %}
 
 #### Agent Skills ⭐⭐⭐ <a href="#claude-mem" id="claude-mem"></a>
 
