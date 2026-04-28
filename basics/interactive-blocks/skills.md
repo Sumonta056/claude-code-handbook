@@ -110,6 +110,10 @@ Or for any code file in your project:
 
 
 
+{% hint style="info" %}
+Liist of SKILLs for all agents: [https://skills.sh/](https://skills.sh/)
+{% endhint %}
+
 ***
 
 {% hint style="success" %}

@@ -508,6 +508,26 @@ Here are different segment, you can add in your claude.md. Like I use the 1 & 3 
 
 ***
 
+#### Tips for Token Efficient!
+
+Add this rules in Claude.md. This repository says : [https://github.com/drona23/claude-token-efficient](https://github.com/drona23/claude-token-efficient). Just adding this reduce huge token in every request - response!
+
+{% code title="" overflow="wrap" lineNumbers="true" %}
+```
+## Approach
+- Read existing files before writing. Don't re-read unless changed.
+- Thorough in reasoning, concise in output.
+- Skip files over 100KB unless required.
+- No sycophantic openers or closing fluff.
+- No emojis or em-dashes.
+- Do not guess APIs, versions, flags, commit SHAs, or package names. Verify by reading code or docs before asserting.
+```
+{% endcode %}
+
+> Must visit this repository to try out different profiles for different cases&#x20;
+
+<figure><img src="../.gitbook/assets/image.png" alt=""><figcaption></figcaption></figure>
+
 ### Summary
 
 `CLAUDE.md` is not documentation. It is collaboration infrastructure.
