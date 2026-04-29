@@ -176,6 +176,16 @@ npx skills add emilkowalski/skill
 ```
 {% endcode %}
 
+***
+
+#### repowise
+
+Codebase intelligence for AI-assisted engineering teams, auto-generated docs, git analytics, dead code detection, and architectural decisions via MCP.
+
+Link :[https://github.com/repowise-dev/repowise](https://github.com/repowise-dev/repowise)
+
+***
+
 
 
 
