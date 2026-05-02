@@ -301,6 +301,23 @@ This part is underrated. Some things actively make `CLAUDE.md` worse by taking u
 
 ***
 
+{% hint style="info" %}
+Tips & Tricks : 4 Lines that must include in Claude.md ( 55,000 developer agreed on this )
+
+```
+1. Don’t assume. Don’t hide confusion. Surface tradeoffs.
+2. Minimum code that solves the problem. Nothing speculative.
+3. Touch only what you must. Clean up only your own mess.
+4. Define success criteria. Loop until verified.
+```
+
+Full Article Link : [The 4 Lines Every CLAUDE.md Needs](https://levelup.gitconnected.com/the-4-lines-every-claude-md-needs-2717a46866f6)&#x20;
+
+
+{% endhint %}
+
+***
+
 ### The Instruction Budget Problem (And Why Your File Might Already Be Too Long)
 
 This is the thing most developers do not know about.
