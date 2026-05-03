@@ -6,6 +6,7 @@
 * [Building a Senior Staff Engineer with Sub-Agent Teams in Claude Code](https://levelup.gitconnected.com/building-a-senior-staff-engineer-with-sub-agent-teams-in-claude-code-771298151392)
 * [How Claude Code Actually Remembers Things](https://ahammadnafiz.github.io/posts/How-Claude-Code-Actually-Remembers-Things/)
 * [Claude Code MEMORY.md: Everything you need to know & how to get started?](https://levelup.gitconnected.com/claude-code-memory-md-everything-you-need-to-know-how-to-get-started-8ac99e161153)
+* [Claude Code Best Practices: 12 Patterns Agentic Engineers Use](https://levelup.gitconnected.com/claude-code-best-practices-12-patterns-agentic-engineers-use-65264e3eb919)
 *
 
 
