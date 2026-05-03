@@ -7,7 +7,7 @@
 * [How Claude Code Actually Remembers Things](https://ahammadnafiz.github.io/posts/How-Claude-Code-Actually-Remembers-Things/)
 * [Claude Code MEMORY.md: Everything you need to know & how to get started?](https://levelup.gitconnected.com/claude-code-memory-md-everything-you-need-to-know-how-to-get-started-8ac99e161153)
 * [Claude Code Best Practices: 12 Patterns Agentic Engineers Use](https://levelup.gitconnected.com/claude-code-best-practices-12-patterns-agentic-engineers-use-65264e3eb919)
-*
+* [Claude Code Skills 101: Everything You Need to Get Started With](https://levelup.gitconnected.com/claude-code-skills-101-everything-you-need-to-get-started-with-c06d388ca803)
 
 
 

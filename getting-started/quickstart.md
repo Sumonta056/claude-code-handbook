@@ -62,6 +62,21 @@ Here you have list of best claude skills, agents, comands, settings, hooks
 
 <div><figure><img src="../.gitbook/assets/image (7).png" alt="" width="375"><figcaption></figcaption></figure> <figure><img src="../.gitbook/assets/image (1) (1) (1) (1).png" alt="" width="375"><figcaption></figcaption></figure></div>
 {% endstep %}
+
+{% step %}
+### Must go through this site!
+
+* [integrations.md](../basics/integrations.md "mention")
+* [how-to-never-hit-claude-rate-limits.md](images-and-media/how-to-never-hit-claude-rate-limits.md "mention")
+* [claude-blogs.md](../resources/claude-blogs.md "mention")
+*
+{% endstep %}
+
+{% step %}
+###
+
+
+{% endstep %}
 {% endstepper %}
 
 {% hint style="success" %}
