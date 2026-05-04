@@ -24,6 +24,10 @@ layout:
 
 # How to Never Hit Claude Rate Limits!
 
+> This is a must read blog to understand the Claude Cache System and How to utilize the cache:&#x20;
+>
+> [Prompt Caching: From Zero to Architecture](https://foyzul.substack.com/p/prompt-caching-from-zero-to-architecture?r=9rews\&utm_campaign=post-expanded-share\&utm_medium=linkedin\&mytag=myvalue\&triedRedirect=true)
+
 {% hint style="warning" %}
 Claude re-reads the entire conversation of every single message.\
 Not just your last prompt.\
@@ -150,6 +154,86 @@ You can also use “summarize from here” to have Claude summarize its learning
 <figure><img src="../../.gitbook/assets/image (13).png" alt=""><figcaption></figcaption></figure>
 
 > [Using Claude Code: Session Management & 1M Context](https://x.com/trq212/status/2044548257058328723)
+{% endstep %}
+
+{% step %}
+### Master the Cache!
+
+This is a must read blog to understand the Claude Cache System and How to utilize the cache: [Prompt Caching: From Zero to Architecture](https://foyzul.substack.com/p/prompt-caching-from-zero-to-architecture?r=9rews\&utm_campaign=post-expanded-share\&utm_medium=linkedin\&mytag=myvalue\&triedRedirect=true)
+
+**Five things that kill your cache (Don’ts): Cache kills mean more token use!**
+
+1. `/clear` : nukes the entire cached prefix
+2. Auto-compaction : rewrites old turns, invalidates everything below
+3. Tool definitions changing mid-session : reshuffles the prefix
+4. Edits near the top of the request : collapses the whole tower
+5. Idle gaps longer than 5 minutes : the cache expires silently
+
+```
+The practical implication:
+
+  Fast iteration (< 5 min gaps):    Slow, thoughtful work (> 5 min gaps):
+
+  Turn 1 → cache write               Turn 1 → cache write
+  Turn 2 (30s later) → cache hit ✓   ...8 minutes pass...
+  Turn 3 (45s later) → cache hit ✓   Turn 2 → cache MISS, full recompute ✗
+  Turn 4 (20s later) → cache hit ✓   ...12 minutes pass...
+  Turn 5 (1m later)  → cache hit ✓   Turn 3 → cache MISS, full recompute ✗
+
+  Hit rate: ~80%+                     Hit rate: ~0%
+  Cost: $                             Cost: $$$$
+```
+
+**Principles for cache-friendly work (Dos):**
+
+1. The rule isn’t “don’t have many skills installed.” It’s more nuanced:
+
+> Don’t have Claude speculatively invoke skills you don’t need. Each invoked skill body permanently adds to your context, eating context-window budget and bringing auto-compaction closer. But the skills you don’t invoke cost you nothing.
+
+2. Don't let claude figure out, you must specify files
+
+Telling Claude _which_ file to read is one round trip. Telling Claude to “go figure out the codebase” is twenty round trips, twenty output-token bursts, and twenty file contents bloating the context forever. Same answer, very different bill. The goal isn’t to eliminate tool calls it’s to make every tool call a directed one.
+
+```
+What "let Claude figure it out" actually costs:
+
+  Directed prompt               Exploratory prompt
+  (you specify the files)       ("go figure out the codebase")
+  ─────────────────────         ──────────────────────────────
+  Round trips:     3            Round trips:     30
+  Output tokens:   ~1K          Output tokens:   ~10K
+  Context bloat:   3 files      Context bloat:   30 files
+  Cache hit rate:  high ✓       Cache hit rate:  high ✓  ← same!
+  Total cost:      $            Total cost:      $$$$$$$$
+```
+
+3. **State the goal at turn one.** Course-corrections at turn 15 don’t directly invalidate the cache (they just append), but they waste context window space on misunderstandings, which brings auto-compaction closer. A clear goal upfront is cache-friendly via the context-window-pressure path. It’s also just better prompting, but the cache angle adds a real cost reason.
+
+The cache rewards a certain kind of discipline: **focused sessions, directed tool use, eager context loading, and velocity**. Understanding these mechanics is the difference between a cheap day and a very expensive one.
+
+<br>
+{% endstep %}
+
+{% step %}
+###
+
+`/insights`
+
+Generate a report analyzing your Claude Code sessions, including project areas, interaction patterns, and friction points. it will create a html file giving you insights about how you are using claude, what's working, whats hindering quick wins that one can implement
+
+`/recap`&#x20;
+
+f
+
+`/compact`&#x20;
+
+
+{% endstep %}
+
+{% step %}
+###
+
+
 {% endstep %}
 
 {% step %}
