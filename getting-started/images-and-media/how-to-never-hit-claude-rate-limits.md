@@ -64,6 +64,8 @@ The two biggest levers: model choice and conversation length. Most people get bo
 {% step %}
 ### Fresh chat every 15–20 messages
 
+Every message rereads everything before it. A token is roughly one word. Every time you send a message, Claude rereads the entire conversation from the start. The cost isn't adding. It's compounding. 98.5% of tokens in long sessions are spent just rereading history.
+
 * Message 1 costs around 200 tokens.
 * By message 15 you are spending 10,000.
 * By message 30 a single question costs 50,000+.
@@ -126,7 +128,7 @@ Write these once. Never repeat yourself.
 {% endstep %}
 
 {% step %}
-### Fix your context file
+### Fix your context file : CLAUDE.md
 
 Your Claude.md should be under 2,000 words or 120 lines. Not 10,000. Not "everything about project."&#x20;
 
@@ -231,9 +233,56 @@ f
 {% endstep %}
 
 {% step %}
-###
+### Control AI Dilema
 
+AI dementia is real and it gets expensive. As your session grows, Claude spreads attention across every token. It starts forgetting things. Contradicting itself. Editing files without reading them first.
 
+* Retrieval accuracy at 256k tokens = 92%
+* Retrieval accuracy at 1M tokens = 78%
+
+Worse performance means MORE tokens for the same output.
+
+> When see AI is giving poor performance, Just open a new chat with summary and now give him some guidance in the first prompt !
+{% endstep %}
+
+{% step %}
+### Do compact context early !
+
+Context rot is a double penalty.&#x20;
+
+> Clear at 12%. Never let it auto compact.
+
+Auto-compaction fires at 95% and keeps only 20–30% of the detail. Manual resets at 12% keep the model sharp the entire session.\
+Here's the process:
+
+* Ask Claude for a full session summary
+* Type /clear to wipe the session
+* Paste the summary back in and keep going
+
+Store your progress in tracker files. A reset should feel like nothing changed.
+{% endstep %}
+
+{% step %}
+### Plan first. Build once. Reset early.
+
+Every token spent planning upfront saves 10x in corrections.
+
+Start every session in plan mode. Get the plan right. Then let Claude build.
+
+The session chain that works:
+
+* Discovery → Read the codebase, produce a summary doc
+* Planning → Read the summary, create a task plan
+* Execution → Read the plan, build the thing
+{% endstep %}
+
+{% step %}
+### Just Build this habbit!
+
+* Reset at 12% context : don't let it autocompact at 95%
+* Store progress in files : don't trust Claude to remember
+* Use /re to drop failures : don't keep broken code in context
+* Use sub agents for research : don't dump 50 articles into one session
 {% endstep %}
 
 {% step %}
