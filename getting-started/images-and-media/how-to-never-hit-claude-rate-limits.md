@@ -212,12 +212,10 @@ What "let Claude figure it out" actually costs:
 3. **State the goal at turn one.** Course-corrections at turn 15 don’t directly invalidate the cache (they just append), but they waste context window space on misunderstandings, which brings auto-compaction closer. A clear goal upfront is cache-friendly via the context-window-pressure path. It’s also just better prompting, but the cache angle adds a real cost reason.
 
 The cache rewards a certain kind of discipline: **focused sessions, directed tool use, eager context loading, and velocity**. Understanding these mechanics is the difference between a cheap day and a very expensive one.
-
-<br>
 {% endstep %}
 
 {% step %}
-###
+### Use this commands!
 
 `/insights`
 
@@ -225,7 +223,7 @@ Generate a report analyzing your Claude Code sessions, including project areas, 
 
 `/recap`&#x20;
 
-f
+
 
 `/compact`&#x20;
 
