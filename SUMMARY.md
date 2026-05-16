@@ -10,7 +10,7 @@
 
 ## Basics
 
-* [Master Claude.md!](basics/integrations.md)
+* [Master Claude.md!](basics/claude-md.md)
 * [Claude Setting.json](basics/claude-setting-json.md)
 * [.claude Folder ⭐⭐](basics/.claude-folder/README.md)
   * [CLAUDE.md vs rules/ ⭐⭐](basics/.claude-folder/claude.md-vs-rules.md)

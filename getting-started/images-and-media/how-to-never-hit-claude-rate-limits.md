@@ -135,7 +135,7 @@ Write these once. Never repeat yourself.
 
 Your Claude.md should be under 2,000 words or 120 lines. Not 10,000. Not "everything about project."&#x20;
 
-What to keep: Go through this [integrations.md](../../basics/integrations.md "mention")
+What to keep: Go through this [claude-md.md](../../basics/claude-md.md "mention")
 
 What to remove: → Lengthy writing samples → Repeated instructions → Old project context → Anything you haven't used in 30 days
 {% endstep %}
