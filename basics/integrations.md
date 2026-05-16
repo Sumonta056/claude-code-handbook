@@ -27,7 +27,7 @@ layout:
 # Master Claude.md!
 
 {% hint style="info" %}
-NT: CLAUDE.md should be under 200 lines per file
+NT: CLAUDE.md should be under 150 lines per file
 {% endhint %}
 
 If you have started using Claude Code, you have already know about `CLAUDE.md`.
