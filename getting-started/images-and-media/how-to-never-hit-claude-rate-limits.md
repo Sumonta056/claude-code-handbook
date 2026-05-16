@@ -1,6 +1,9 @@
 ---
+description: You usually hit the wall much faster than expected. You blame the plan
+icon: traffic-light
 cover: ../../.gitbook/assets/claude2.png
-coverY: 0
+coverY: 70.91143774406248
+coverHeight: 334
 layout:
   width: default
   cover:
@@ -41,17 +44,17 @@ The two biggest levers: model choice and conversation length. Most people get bo
 
 {% stepper %}
 {% step %}
-### Use the right model
+#### Use the right model
 
 * Haiku handles 50% of daily work. Haiku → quick replies, formatting, simple tasks
-* Sonnet covers the next of work. Sonnet → default for writing, analysis, coding
+* Sonnet covers the next of work. Sonnet → default for coding, plan, writing, analysis,
 * Opus is for the 5% that genuinely needs it. Opus → deep reasoning only. Not for everything.
 
 > Don't leave Opus on and burn through your limit. Opus costs 5× more per message. Stop using it as your default. Turn off Extended Thinking unless you actually need it.
 {% endstep %}
 
 {% step %}
-### Turn off the token burners
+#### Turn off the token burners
 
 * Extended Thinking doubles your usage.
 * Web Search enabled adds 2 to 3x.
@@ -62,7 +65,7 @@ The two biggest levers: model choice and conversation length. Most people get bo
 {% endstep %}
 
 {% step %}
-### Fresh chat every 15–20 messages
+#### Fresh chat every 15–20 messages
 
 Every message rereads everything before it. A token is roughly one word. Every time you send a message, Claude rereads the entire conversation from the start. The cost isn't adding. It's compounding. 98.5% of tokens in long sessions are spent just rereading history.
 
@@ -81,7 +84,7 @@ Tricks : Copy summary (500–1,500 tokens) → Open new chat → Paste as first 
 {% endstep %}
 
 {% step %}
-### Batch questions into one
+#### Batch questions into one
 
 * Three messages means three context loads.
 * One combined message means one load.
@@ -94,7 +97,7 @@ The answers are better too.
 {% endstep %}
 
 {% step %}
-### Spread your work across the day
+#### Spread your work across the day
 
 * Claude runs on a 5-hour rolling window.
 * Burn through it in one session and you wait.
@@ -108,7 +111,7 @@ If you work 9-5, then send a small message to Claude at 8 am, this will create a
 {% endstep %}
 
 {% step %}
-### Use Projects for repeat files
+#### Use Projects for repeat files
 
 * Same PDF in five chats costs five token loads.
 * Projects cache your uploaded files once.
@@ -118,7 +121,7 @@ Upload once and stop wasting tokens on the same file.
 {% endstep %}
 
 {% step %}
-### Store your context once
+#### Store your context once
 
 * Memory for Chat.
 * CLAUDE.md for Code.
@@ -128,7 +131,7 @@ Write these once. Never repeat yourself.
 {% endstep %}
 
 {% step %}
-### Fix your context file : CLAUDE.md
+#### Fix your context file : CLAUDE.md
 
 Your Claude.md should be under 2,000 words or 120 lines. Not 10,000. Not "everything about project."&#x20;
 
@@ -138,19 +141,16 @@ What to remove: → Lengthy writing samples → Repeated instructions → Old pr
 {% endstep %}
 
 {% step %}
-### Rewinding Instead of Correcting
+#### Rewinding Instead of Correcting
 
 <figure><img src="../../.gitbook/assets/image (12).png" alt=""><figcaption></figcaption></figure>
 
 If I had to pick one habit that signals good context management, it’s rewind.
 
-\
 In Claude Code, `double-tapping Esc(or running /rewind)` lets you jump back to any previous message and re-prompt from there. The messages after that point are dropped from the context.
 
-\
 Rewind is often the better approach to correction. For example, Claude reads five files, tries an approach, and it doesn't work. Your instinct may be to type "that didn't work, try X instead." but the better move is to rewind to just after the file reads, and re-prompt with what you learned. "Don't use approach A, the foo module doesn't expose that — go straight to B."
 
-\
 You can also use “summarize from here” to have Claude summarize its learnings and create a handoff message, kind of like a message to the previous iteration of Claude from its future self that tried something and it didn’t work.
 
 <figure><img src="../../.gitbook/assets/image (13).png" alt=""><figcaption></figcaption></figure>
@@ -215,23 +215,36 @@ The cache rewards a certain kind of discipline: **focused sessions, directed too
 {% endstep %}
 
 {% step %}
-### Use this commands!
+#### Use this Commands & Prompts!
 
-`/insights`
+`/insights` :  Analyzes your Claude Code session history (commands run, files touched, patterns) and generates an HTML report. Requires Claude Code CLI with session data stored locally.
 
-Generate a report analyzing your Claude Code sessions, including project areas, interaction patterns, and friction points. it will create a html file giving you insights about how you are using claude, what's working, whats hindering quick wins that one can implement
+`/recap` : Summarizes what happened in the current Claude Code session, files changed, decisions made, next steps.
 
-`/recap`&#x20;
+`/compact` : Compresses the conversation context in a long Claude Code session to free up context window space while preserving key state.
 
+{% hint style="info" %}
+Prompts : Summary Prompt
+{% endhint %}
 
+```
+Summarize this entire conversation. Structure it as:
+🎯 Goal — What I was trying to achieve
+✅ Decisions Made — Key choices, approaches, or solutions we landed on
+📦 Deliverables — Files created, code written, configs set up (with filenames if any)
+🧠 Key Insights — Things I should remember (gotchas, patterns, 
+reasoning behind decisions)
+⚠️ Unresolved / Parked — Things we didn't finish or deferred
+➡️ Next Steps — Concrete actions I should take next, in order
 
-`/compact`&#x20;
-
-
+Be dense, not verbose. Skip pleasantries. 
+Use bullet points. If something has a file path, command, or code snippet —
+ include it exactly.
+```
 {% endstep %}
 
 {% step %}
-### Control AI Dilema
+#### Control AI Dilema
 
 AI dementia is real and it gets expensive. As your session grows, Claude spreads attention across every token. It starts forgetting things. Contradicting itself. Editing files without reading them first.
 
@@ -244,7 +257,7 @@ Worse performance means MORE tokens for the same output.
 {% endstep %}
 
 {% step %}
-### Do compact context early !
+#### Do compact context early
 
 Context rot is a double penalty.&#x20;
 
@@ -254,14 +267,14 @@ Auto-compaction fires at 95% and keeps only 20–30% of the detail. Manual reset
 Here's the process:
 
 * Ask Claude for a full session summary
-* Type /clear to wipe the session
+* Type `/clear` to wipe the session
 * Paste the summary back in and keep going
 
 Store your progress in tracker files. A reset should feel like nothing changed.
 {% endstep %}
 
 {% step %}
-### Plan first. Build once. Reset early.
+#### Plan first. Build once. Reset early.
 
 Every token spent planning upfront saves 10x in corrections.
 
@@ -275,7 +288,7 @@ The session chain that works:
 {% endstep %}
 
 {% step %}
-### Just Build this habbit!
+#### Just Build this habbit!
 
 * Reset at 12% context : don't let it autocompact at 95%
 * Store progress in files : don't trust Claude to remember
@@ -284,13 +297,11 @@ The session chain that works:
 {% endstep %}
 
 {% step %}
-###
+#### Good Resources&#x20;
 
-
+* [Never Hit Claude Usage Limits Ever Again](https://levelup.gitconnected.com/never-hit-claude-usage-limits-ever-again-2665f7099b14)
 {% endstep %}
 {% endstepper %}
-
-***
 
 > Remember :  The tool isn't the problem. The habits are.Fix the habits once. You'll never complain about limits again.
 
