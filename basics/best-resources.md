@@ -85,6 +85,8 @@ A skill for Claude Code and OpenCode that removes signs of AI-generated writing 
 
 
 
+[https://github.com/shanraisshan/claude-code-best-practice](https://github.com/shanraisshan/claude-code-best-practice)
+
 
 
 
