@@ -30,6 +30,13 @@ Now paste the file in the .claude system root folder :&#x20;
 
 {% file src="../.gitbook/assets/statusline-command.sh" %}
 
+More Statusline UI :thumbsup:
+
+* [https://powerline.owloops.com/](https://powerline.owloops.com/)
+* [https://github.com/sirmalloc/ccstatusline](https://github.com/sirmalloc/ccstatusline)  ( I am using  this)
+
+<figure><img src="../.gitbook/assets/image (16).png" alt=""><figcaption></figcaption></figure>
+
 {% hint style="info" %}
 More Claude Settings Tools Integration : [https://app.aitmpl.com/settings](https://app.aitmpl.com/settings)
 {% endhint %}
