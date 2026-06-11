@@ -72,8 +72,8 @@ In other words, the top level should answer the biggest questions first. What do
 [claude.md-vs-rules.md](claude.md-vs-rules.md)
 {% endcontent-ref %}
 
-{% content-ref url="/broken/pages/PbYb0GukRhiS4qCHdRal" %}
-[Broken link](/broken/pages/PbYb0GukRhiS4qCHdRal)
+{% content-ref url="https://app.gitbook.com/s/gz5iC7XS4JU6AtzVcYue/" %}
+[Getting Started](https://app.gitbook.com/s/gz5iC7XS4JU6AtzVcYue/)
 {% endcontent-ref %}
 
 {% content-ref url="the-role-of-commands.md" %}

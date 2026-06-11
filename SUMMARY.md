@@ -7,6 +7,8 @@
 * [Guidelines!](getting-started/images-and-media/README.md)
   * [How to Never Hit Claude Rate Limits!](getting-started/images-and-media/how-to-never-hit-claude-rate-limits.md)
   * [Token Compression Tools!](getting-started/images-and-media/token-compression-tools.md)
+* [Suggestions!](getting-started/suggestions/README.md)
+  * [Week -1  : AI Pilot Program](getting-started/suggestions/week-1-ai-pilot-program.md)
 
 ## Basics
 
