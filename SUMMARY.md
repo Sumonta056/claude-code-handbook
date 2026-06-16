@@ -9,6 +9,7 @@
   * [Token Compression Tools!](getting-started/images-and-media/token-compression-tools.md)
 * [Suggestions!](getting-started/suggestions/README.md)
   * [Week -1  : AI Pilot Program](getting-started/suggestions/week-1-ai-pilot-program.md)
+  * [Best Approach & Prompts](getting-started/suggestions/best-approach-and-prompts.md)
 
 ## Basics
 
