@@ -11,6 +11,11 @@
   * [Week -1  : AI Pilot Program](getting-started/suggestions/week-1-ai-pilot-program.md)
   * [Best Approach & Prompts](getting-started/suggestions/best-approach-and-prompts.md)
 
+## Claude Certified Architect
+
+* [Claude Certified Architect Preparation](claude-certified-architect/claude-certified-architect-preparation.md)
+* [Page 1](claude-certified-architect/page-1.md)
+
 ## Basics
 
 * [Master Claude.md!](basics/claude-md.md)
