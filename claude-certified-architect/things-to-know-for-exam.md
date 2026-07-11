@@ -91,3 +91,36 @@ Key subdomains:
 * **5.3 Error Propagation** — Manage how errors flow through multi-agent systems.
 * **5.4 Information Provenance** — Track where information came from across a multi-step workflow.
 * **5.5 Confidence Calibration** — Design confidence-routed human review workflow
+
+
+
+**Implementing the Agentic Loop**
+
+* Manage agent control flow using `stop_reason` to handle tool results and terminate loops effectively.
+* Structure agentic loops to manage task execution and refine termination conditions for efficient orchestration.
+
+**Multi-Agent Orchestration**
+
+* Coordinate subagents using coordinator-subagent patterns for task decomposition and parallel execution.
+* Apply iterative refinement loops where multiple agents collaborate in stages to improve efficiency and accuracy.
+
+**Tool Interface and Resource Design**
+
+* Create clear and concise tool descriptions, and decide when to consolidate or split tools.
+*
+* Design tools and resources for content catalogs with high-quality descriptions for better usability.
+
+**MCP Configuration and Server Management**
+
+* Configure and manage tools within the Model Context Protocol (MCP) across project and user scopes.
+* Handle multi-server access and use environment variable expansion for flexible configuration.
+
+**Error Handling and Escalation Strategies**
+
+* Design structured error responses for transient, business, and permission errors.
+* Define escalation criteria for cases like policy gaps, user preferences, or stalled progress.
+
+**Prompt Engineering and Structured Output**
+
+* Craft effective few-shot prompts to handle ambiguity and improve accuracy.
+* Design schemas and configure `tool_use` for structured output, including nullable fields to reduce hallucinations.

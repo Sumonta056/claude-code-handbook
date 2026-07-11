@@ -21,6 +21,8 @@
 
 
 
+In multi-agent systems, subagents operate with isolated context and do not automatically inherit the coordinator’s conversation history. The coordinator must explicitly include complete findings from prior agents in each subagent’s prompt. When a synthesis subagent is missing findings, the most common cause is that the coordinator failed to pass the complete results in the prompt.
+
 <figure><img src="../../.gitbook/assets/image (26).png" alt=""><figcaption></figcaption></figure>
 
 * Need to pass everything with well-defined in prompt of sub-agents

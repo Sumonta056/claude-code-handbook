@@ -64,6 +64,7 @@ Claude Certified Architect (CCA) is a certification program designed to validate
 #### Other Resources&#x20;
 
 * [https://www.nostudy.org/claude-certified-architect-foundations-proxy-exam/](https://www.nostudy.org/claude-certified-architect-foundations-proxy-exam/)
+* [https://tutorialsdojo.com/cca-f-claude-certified-architect-foundations-study-guide/](https://tutorialsdojo.com/cca-f-claude-certified-architect-foundations-study-guide/)
 *
 
 {% file src="../.gitbook/assets/The Architect's Playbook.pdf" %}

@@ -1,4 +1,4 @@
-# Page 2
+# Question Part - 1
 
 <figure><img src="../../.gitbook/assets/image.png" alt=""><figcaption></figcaption></figure>
 
@@ -49,3 +49,35 @@ Why not C?
 Why not D?
 
 * Subagent are indirectly doing same kind of review. If 3 review check do 3 different things and then validate it can be a good option
+
+***
+
+You are building a multi-agent research system with a coordinator agent that delegates to specialized subagents. During testing, you discover that your synthesis subagent produces a report missing key findings that the web search subagent found. The web search subagent’s logs confirm it returned comprehensive results. What is the most likely root cause?
+
+1. The synthesis subagent’s context window is full, causing it to drop information from the middle of the input.
+2. The coordinator is not passing the web search subagent’s complete findings into the synthesis subagent’s prompt.
+3. The synthesis subagent is running an outdated version of the model that lacks the capacity to process long inputs.
+4. The web search subagent and synthesis subagent are sharing memory, causing a race condition that corrupts the findings.
+
+> Why not?
+>
+> 1: Cause less chance sub agents context gets full&#x20;
+>
+> 3: Not reasonable enough
+>
+> 4: Agents don't share memory common
+
+In multi-agent systems, subagents operate with isolated context and do not automatically inherit the coordinator’s conversation history. The coordinator must explicitly include complete findings from prior agents in each subagent’s prompt. When a synthesis subagent is missing findings, the most common cause is that the coordinator failed to pass the complete results in the prompt.
+
+***
+
+Your team’s CLAUDE.md has grown to over 500 lines, covering coding standards, testing conventions, API conventions, deployment procedures, and security guidelines. Developers report that Claude sometimes misses instructions from specific sections. What is the most maintainable approach to restructure this?
+
+1. Split the monolithic CLAUDE.md into focused topic-specific files in .claude/rules/ (e.g., testing.md, api-conventions.md, deployment.md).
+2. Keep the single CLAUDE.md but reorganize with clearer headers and a table of contents at the top.
+3. Create separate CLAUDE.md files in each subdirectory of the project, duplicating relevant sections.
+4. Convert the CLAUDE.md into a skills file in .claude/skills/ so developers can invoke it on demand.
+
+
+
+> The .claude/rules/ directory is the recommended approach for organizing topic-specific rule files as an alternative to a monolithic CLAUDE.md. Each file can have YAML frontmatter with path-scoping to activate only when editing relevant files, reducing irrelevant context and improving maintainability.
