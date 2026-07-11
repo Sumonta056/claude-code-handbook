@@ -1,4 +1,4 @@
-# Lessons !
+# Lessons & Learnings
 
 * From 4 option, first cut out which is not answer
 * Multiple choice : 1 correct + 3 distractor&#x20;
@@ -6,9 +6,17 @@
 
 
 
-
-
-
+* Guarantees beat instructions :&#x20;
+  * When a rule MUST hold : enforce it in code: hooks, gates, schemas.
+  * Prompts are probabilistic; they fail a small % of the time.
+  * "Gurantee Compliance Required" = answer is hooks
+* Fix root cause proportionately
+  * If two tools are getting confused? Improve description
+  * Don't build routing classifers
+  * Exam has full of over engineer wrong answer
+* Context is scarce and leaky
+  *
+* Gurantee
 
 
 
