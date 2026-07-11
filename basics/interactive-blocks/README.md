@@ -37,13 +37,13 @@ Slash commands are shortcuts that control Claude's behavior during an interactiv
 List of Command Templates : [https://app.aitmpl.com/commands](https://app.aitmpl.com/commands)
 {% endhint %}
 
-<div data-full-width="true"><figure><img src="../../.gitbook/assets/image (4).png" alt=""><figcaption></figcaption></figure></div>
+<div data-full-width="true"><figure><img src="../../.gitbook/assets/image (4) (1).png" alt=""><figcaption></figcaption></figure></div>
 
 {% hint style="warning" %}
 List of Skills Template: [https://app.aitmpl.com/skills](https://app.aitmpl.com/skills)&#x20;
 {% endhint %}
 
-<div data-full-width="true"><figure><img src="../../.gitbook/assets/image (5).png" alt=""><figcaption></figcaption></figure></div>
+<div data-full-width="true"><figure><img src="../../.gitbook/assets/image (5) (1).png" alt=""><figcaption></figcaption></figure></div>
 
 
 

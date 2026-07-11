@@ -13,8 +13,11 @@
 
 ## Claude Certified Architect
 
-* [Claude Certified Architect Preparation](claude-certified-architect/claude-certified-architect-preparation.md)
-* [Page 1](claude-certified-architect/page-1.md)
+* [About & Preparation](claude-certified-architect/about-and-preparation.md)
+* [Question Solving + Guide](claude-certified-architect/question-solving-+-guide/README.md)
+  * [Page 2](claude-certified-architect/question-solving-+-guide/page-2.md)
+* [Things to Know!](claude-certified-architect/things-to-know.md)
+* [Lessons !](claude-certified-architect/lessons.md)
 
 ## Basics
 

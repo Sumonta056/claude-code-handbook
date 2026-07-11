@@ -62,7 +62,7 @@ Here you have list of best claude skills, agents, comands, settings, hooks
 {% step %}
 #### Claude Project Structure!
 
-<div><figure><img src="../.gitbook/assets/image (7).png" alt="" width="375"><figcaption></figcaption></figure> <figure><img src="../.gitbook/assets/image (1) (1) (1) (1) (1).png" alt="" width="375"><figcaption></figcaption></figure></div>
+<div><figure><img src="../.gitbook/assets/image (7).png" alt="" width="375"><figcaption></figcaption></figure> <figure><img src="../.gitbook/assets/image (1) (1) (1) (1) (1) (1).png" alt="" width="375"><figcaption></figcaption></figure></div>
 {% endstep %}
 
 {% step %}
@@ -95,4 +95,4 @@ _If you find value in what we’re doing, please **subscribe to My YouTube chann
 
 ### Claude Code Workflow!
 
-<figure><img src="../.gitbook/assets/image (4) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../.gitbook/assets/image (4) (1) (1).png" alt=""><figcaption></figcaption></figure>

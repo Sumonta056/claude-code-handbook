@@ -103,7 +103,7 @@ You: "Create a session handoff document for what we accomplished today"
 
 5. Cost Optimization
 
-<figure><img src="../../.gitbook/assets/image.png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image (5).png" alt=""><figcaption></figcaption></figure>
 
 6. Task Planner Agent :thumbsup:
 
