@@ -81,3 +81,18 @@ Your team’s CLAUDE.md has grown to over 500 lines, covering coding standards, 
 
 
 > The .claude/rules/ directory is the recommended approach for organizing topic-specific rule files as an alternative to a monolithic CLAUDE.md. Each file can have YAML frontmatter with path-scoping to activate only when editing relevant files, reducing irrelevant context and improving maintainability.
+
+***
+
+<figure><img src="../../.gitbook/assets/image (45).png" alt=""><figcaption></figcaption></figure>
+
+{% hint style="danger" %}
+Why not A : cause the read the question carefully : materials field was not only the issue mentioned
+{% endhint %}
+
+
+
+
+
+
+

@@ -37,6 +37,7 @@ Claude Certified Architect (CCA) is a certification program designed to validate
 #### Roadmap Learning
 
 * [How I passed the NEW Claude Architect Certification Exam (CCA-F)](https://www.youtube.com/watch?v=kY9z4hiH4nk)
+* [Claude Certified Architect Exam (CCA-F) Complete Study Guide – Pass in 2026](https://www.youtube.com/watch?v=of9PPnuBedU)
 * [Ultimate Anthropic CCA Exam Guide](https://docs.google.com/document/d/1hLyE4mp82v5kj950e9kvbYp0Iz1c9HYjnuTN6Lt4JZk/edit?tab=t.0)
   * You can only take this exam once every 6 months
   * Must do this course:&#x20;

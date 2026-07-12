@@ -31,3 +31,7 @@ If you see one of these in an answer choice, it's almost always the wrong answer
 * Single-pass review of many files (use per-file + integration passes).
 * Required schema fields where source info may be absent (induces fabrication — make them nullable).
 * Putting team-wide instructions in \~/.claude/CLAUDE.md instead of the project-level file.
+
+
+
+<figure><img src="../../.gitbook/assets/image (58).png" alt=""><figcaption></figcaption></figure>

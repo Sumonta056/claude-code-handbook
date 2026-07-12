@@ -14,14 +14,16 @@
 ## Claude Certified Architect
 
 * [About & Preparation](claude-certified-architect/about-and-preparation.md)
-* [Question Solving + Guide](claude-certified-architect/question-solving-+-guide/README.md)
-  * [Question Part - 1](claude-certified-architect/question-solving-+-guide/question-part-1.md)
 * [Things to Know for Exam](claude-certified-architect/things-to-know-for-exam.md)
 * [Lessons & Learnings](claude-certified-architect/lessons-and-learnings/README.md)
-  * [Agentic Architecture & Orchestration](claude-certified-architect/lessons-and-learnings/agentic-architecture-and-orchestration.md)
+  * [Agentic Architecture & Orchestration](claude-certified-architect/lessons-and-learnings/agentic-architecture-and-orchestration/README.md)
+    * [Page 1](claude-certified-architect/lessons-and-learnings/agentic-architecture-and-orchestration/page-1.md)
   * [Tool Design & MCP Integration](claude-certified-architect/lessons-and-learnings/tool-design-and-mcp-integration.md)
   * [Claude Code Configuration & Workflows](claude-certified-architect/lessons-and-learnings/claude-code-configuration-and-workflows.md)
   * [Prompt Engineering & Structured Output](claude-certified-architect/lessons-and-learnings/prompt-engineering-and-structured-output.md)
+  * [Context Management & Reliability](claude-certified-architect/lessons-and-learnings/context-management-and-reliability.md)
+* [Question Solving + Guide](claude-certified-architect/question-solving-+-guide/README.md)
+  * [Question Part - 1](claude-certified-architect/question-solving-+-guide/question-part-1.md)
 * [Claude Course Notes](claude-certified-architect/claude-course-notes/README.md)
   * [Claude Code in Action](claude-certified-architect/claude-course-notes/claude-code-in-action.md)
 
