@@ -17,6 +17,7 @@
 * [Things to Know for Exam](claude-certified-architect/things-to-know-for-exam.md)
 * [Lessons & Learnings](claude-certified-architect/lessons-and-learnings/README.md)
   * [Agentic Architecture & Orchestration](claude-certified-architect/lessons-and-learnings/agentic-architecture-and-orchestration/README.md)
+    * [Claude API](claude-certified-architect/lessons-and-learnings/agentic-architecture-and-orchestration/claude-api.md)
     * [1.1 Design & Implment Agentic Loops](claude-certified-architect/lessons-and-learnings/agentic-architecture-and-orchestration/1.1-design-and-implment-agentic-loops.md)
     * [1.2 Orchestration Multi-agent System](claude-certified-architect/lessons-and-learnings/agentic-architecture-and-orchestration/1.2-orchestration-multi-agent-system.md)
     * [1.3 Subagent invocation & context passing](claude-certified-architect/lessons-and-learnings/agentic-architecture-and-orchestration/1.3-subagent-invocation-and-context-passing.md)
