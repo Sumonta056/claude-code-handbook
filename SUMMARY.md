@@ -55,6 +55,7 @@
   * [Question Part - 1](claude-certified-architect/question-solving-+-guide/question-part-1.md)
 * [Claude Course Notes](claude-certified-architect/claude-course-notes/README.md)
   * [Claude Code in Action](claude-certified-architect/claude-course-notes/claude-code-in-action.md)
+  * [Building with the Claude](claude-certified-architect/claude-course-notes/building-with-the-claude.md)
 
 ## Basics
 
