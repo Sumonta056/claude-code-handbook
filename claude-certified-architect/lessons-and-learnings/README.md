@@ -20,6 +20,15 @@
 
 
 
+1. stop\_reason is your source of truth in agentic loops
+2. Prompt instructions have a failure rate. Programmatic enforcement doesn't. Prompt instructions have a failure rate. Programmatic enforcement doesn't.
+3. Subagents don't inherit context — you have to pass it explicitly
+4. Tool descriptions are how Claude chooses tools
+   1. If two tools have similar descriptions, Claude will pick the wrong one. The exam teaches this through painful examples — analyze\_content vs. analyze\_document, or get\_customer vs. get\_account\_info both described as "retrieves customer data." The fix is always richer descriptions: what the tool handles, when to use it, when not to use it, edge cases, and how it differs from similar tools.
+5.
+
+
+
 #### Anti-patterns the exam loves to test
 
 If you see one of these in an answer choice, it's almost always the wrong answer:
