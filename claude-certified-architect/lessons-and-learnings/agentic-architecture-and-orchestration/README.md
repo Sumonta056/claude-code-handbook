@@ -152,3 +152,11 @@ In multi-agent systems, subagents operate with isolated context and do not autom
 
 
 
+<figure><img src="../../../.gitbook/assets/image.png" alt=""><figcaption></figcaption></figure>
+
+
+
+Why not A & C
+
+* Core Diff Legacy vs Agentic : We are not using pre connfigure deicision trees & hard codes
+* LLM evaluates the new context non deterministically  and dynamically decides the next best decision

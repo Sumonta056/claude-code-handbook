@@ -147,7 +147,7 @@ An MCP server implementation that provides a tool for dynamic and reflective pro
 Go to this website : [https://app.aitmpl.com/mcps](https://app.aitmpl.com/mcps)
 {% endhint %}
 
-<div data-full-width="true"><figure><img src="../.gitbook/assets/image (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure></div>
+<div data-full-width="true"><figure><img src="../.gitbook/assets/image (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure></div>
 
 
 
@@ -165,4 +165,4 @@ _If you find value in what we’re doing, please **subscribe to My YouTube chann
 **Code & Career Golpo Newsletter:** [Subscribe to My Newsletter](https://www.linkedin.com/newsletters/code-career-golpo-7309186050084544512/)
 {% endhint %}
 
-<figure><img src="../.gitbook/assets/image (8).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../.gitbook/assets/image (8) (1).png" alt=""><figcaption></figcaption></figure>
