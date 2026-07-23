@@ -50,6 +50,7 @@ Claude Certified Architect (CCA) is a certification program designed to validate
       <pre data-overflow="wrap"><code>Read the official PDF guide carefully and take notes. This is the single highest-value document. Memorize the terminology verbatim — stop_reason, tool_use, end_turn, isError, errorCategory, isRetryable, fork_session, PostToolUse hooks, tool_choice, Message Batches API, .mcp.json vs ~/.claude.json, CLAUDE.md hierarchy, .claude/rules / commands / skills.
       </code></pre>
 * [The AI Certification That Will Make You Irreplaceable | Claude Certified Architect - Full Breakdown](https://www.youtube.com/playlist?list=PLviC8AFqAj5A9MHkRIn2fU5Ac2lEdJxNf)
+* [https://github.com/paullarionov/claude-certified-architect/blob/main/guide\_en.md](https://github.com/paullarionov/claude-certified-architect/blob/main/guide_en.md) (Must)
 {% endstep %}
 
 {% step %}
